@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>smoke</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../lib/template.css" />
+      <script type="text/javascript" src="../lib/jquery.js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../lib/package_big.png" />
+        
+        <h1>smoke</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <span class="name">smoke</span>
+        
+        
+      </span>
+      </h4>
+      
+          <div class="fullcommenttop" id="comment"></div>
+        
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="smoke.Method" data-isabs="false">
+      <a id="Method:Method"></a>
+      <h4 class="signature">
+      <span class="kind">class</span>
+      <span class="symbol"> 
+        <a href="Method.html"><span class="name">Method</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.RawData" data-isabs="false">
+      <a id="RawData:RawData"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="RawData.html"><span class="name">RawData</span></a>
+        
+        <span class="params">(<span name="data">data: Array[Byte]</span>)</span><span class="result"> extends ResponseData with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Request" data-isabs="true">
+      <a id="Request:Request"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Request.html"><span class="name">Request</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Response" data-isabs="false">
+      <a id="Response:Response"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="Response.html"><span class="name">Response</span></a>
+        
+        <span class="params">(<span name="status">status: ResponseStatus</span>, <span name="headers">headers: Map[String, String]</span>, <span name="body">body: ResponseData</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ResponseData" data-isabs="true">
+      <a id="ResponseData:ResponseData"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="ResponseData.html"><span class="name">ResponseData</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ResponseStatus" data-isabs="false">
+      <a id="ResponseStatus:ResponseStatus"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="ResponseStatus.html"><span class="name">ResponseStatus</span></a>
+        
+        <span class="params">(<span name="code">code: Int</span>, <span name="message">message: String</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Server" data-isabs="true">
+      <a id="Server:Server"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Server.html"><span class="name">Server</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Smoke" data-isabs="true">
+      <a id="Smoke:Smoke"></a>
+      <h4 class="signature">
+      <span class="kind">trait</span>
+      <span class="symbol"> 
+        <a href="Smoke.html"><span class="name">Smoke</span></a>
+        
+        <span class="result"> extends DelayedInit</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.UTF8Data" data-isabs="false">
+      <a id="UTF8Data:UTF8Data"></a>
+      <h4 class="signature">
+      <span class="kind">case class</span>
+      <span class="symbol"> 
+        <a href="UTF8Data.html"><span class="name">UTF8Data</span></a>
+        
+        <span class="params">(<span name="data">data: String</span>)</span><span class="result"> extends ResponseData with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+        
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="smoke.&amp;" data-isabs="false">
+      <a id="&amp;:&amp;"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="$amp$.html"><span class="name">&amp;</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Accepted" data-isabs="false">
+      <a id="Accepted:Accepted"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Accepted$.html"><span class="name">Accepted</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.BadGateway" data-isabs="false">
+      <a id="BadGateway:BadGateway"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="BadGateway$.html"><span class="name">BadGateway</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.BadRequest" data-isabs="false">
+      <a id="BadRequest:BadRequest"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="BadRequest$.html"><span class="name">BadRequest</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.CONNECT" data-isabs="false">
+      <a id="CONNECT:CONNECT"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="CONNECT$.html"><span class="name">CONNECT</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Conflict" data-isabs="false">
+      <a id="Conflict:Conflict"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Conflict$.html"><span class="name">Conflict</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Continue" data-isabs="false">
+      <a id="Continue:Continue"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Continue$.html"><span class="name">Continue</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Created" data-isabs="false">
+      <a id="Created:Created"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Created$.html"><span class="name">Created</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.DELETE" data-isabs="false">
+      <a id="DELETE:DELETE"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="DELETE$.html"><span class="name">DELETE</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ExpectationFailed" data-isabs="false">
+      <a id="ExpectationFailed:ExpectationFailed"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ExpectationFailed$.html"><span class="name">ExpectationFailed</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.FailedDependency" data-isabs="false">
+      <a id="FailedDependency:FailedDependency"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="FailedDependency$.html"><span class="name">FailedDependency</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.FileExtension" data-isabs="false">
+      <a id="FileExtension:FileExtension"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="FileExtension$.html"><span class="name">FileExtension</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Forbidden" data-isabs="false">
+      <a id="Forbidden:Forbidden"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Forbidden$.html"><span class="name">Forbidden</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Found" data-isabs="false">
+      <a id="Found:Found"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Found$.html"><span class="name">Found</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.GET" data-isabs="false">
+      <a id="GET:GET"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="GET$.html"><span class="name">GET</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.GatewayTimeout" data-isabs="false">
+      <a id="GatewayTimeout:GatewayTimeout"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="GatewayTimeout$.html"><span class="name">GatewayTimeout</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Gone" data-isabs="false">
+      <a id="Gone:Gone"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Gone$.html"><span class="name">Gone</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.HEAD" data-isabs="false">
+      <a id="HEAD:HEAD"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="HEAD$.html"><span class="name">HEAD</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.HTTPVersionNotSupported" data-isabs="false">
+      <a id="HTTPVersionNotSupported:HTTPVersionNotSupported"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="HTTPVersionNotSupported$.html"><span class="name">HTTPVersionNotSupported</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.InternalServerError" data-isabs="false">
+      <a id="InternalServerError:InternalServerError"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="InternalServerError$.html"><span class="name">InternalServerError</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.LenghtRequired" data-isabs="false">
+      <a id="LenghtRequired:LenghtRequired"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="LenghtRequired$.html"><span class="name">LenghtRequired</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Locked" data-isabs="false">
+      <a id="Locked:Locked"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Locked$.html"><span class="name">Locked</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.MethodNotAllowed" data-isabs="false">
+      <a id="MethodNotAllowed:MethodNotAllowed"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="MethodNotAllowed$.html"><span class="name">MethodNotAllowed</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.MovedPermanently" data-isabs="false">
+      <a id="MovedPermanently:MovedPermanently"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="MovedPermanently$.html"><span class="name">MovedPermanently</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.MultiStatus" data-isabs="false">
+      <a id="MultiStatus:MultiStatus"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="MultiStatus$.html"><span class="name">MultiStatus</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.MultipleChoices" data-isabs="false">
+      <a id="MultipleChoices:MultipleChoices"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="MultipleChoices$.html"><span class="name">MultipleChoices</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NoContent" data-isabs="false">
+      <a id="NoContent:NoContent"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NoContent$.html"><span class="name">NoContent</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NonAuthoritativeInformation" data-isabs="false">
+      <a id="NonAuthoritativeInformation:NonAuthoritativeInformation"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NonAuthoritativeInformation$.html"><span class="name">NonAuthoritativeInformation</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NotAcceptable" data-isabs="false">
+      <a id="NotAcceptable:NotAcceptable"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NotAcceptable$.html"><span class="name">NotAcceptable</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NotFound" data-isabs="false">
+      <a id="NotFound:NotFound"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NotFound$.html"><span class="name">NotFound</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NotImplemented" data-isabs="false">
+      <a id="NotImplemented:NotImplemented"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NotImplemented$.html"><span class="name">NotImplemented</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.NotModified" data-isabs="false">
+      <a id="NotModified:NotModified"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="NotModified$.html"><span class="name">NotModified</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.OPTIONS" data-isabs="false">
+      <a id="OPTIONS:OPTIONS"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="OPTIONS$.html"><span class="name">OPTIONS</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Ok" data-isabs="false">
+      <a id="Ok:Ok"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Ok$.html"><span class="name">Ok</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.POST" data-isabs="false">
+      <a id="POST:POST"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="POST$.html"><span class="name">POST</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.PUT" data-isabs="false">
+      <a id="PUT:PUT"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PUT$.html"><span class="name">PUT</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Params" data-isabs="false">
+      <a id="Params:Params"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Params$.html"><span class="name">Params</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.PartialContent" data-isabs="false">
+      <a id="PartialContent:PartialContent"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PartialContent$.html"><span class="name">PartialContent</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Path" data-isabs="false">
+      <a id="Path:Path"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Path$.html"><span class="name">Path</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Request Extractors</p>
+    </li><li visbl="pub" name="smoke.PaymentRequired" data-isabs="false">
+      <a id="PaymentRequired:PaymentRequired"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PaymentRequired$.html"><span class="name">PaymentRequired</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.PreconditionFailed" data-isabs="false">
+      <a id="PreconditionFailed:PreconditionFailed"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="PreconditionFailed$.html"><span class="name">PreconditionFailed</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Processing" data-isabs="false">
+      <a id="Processing:Processing"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Processing$.html"><span class="name">Processing</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ProxyAuthenticationRequired" data-isabs="false">
+      <a id="ProxyAuthenticationRequired:ProxyAuthenticationRequired"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ProxyAuthenticationRequired$.html"><span class="name">ProxyAuthenticationRequired</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Request" data-isabs="false">
+      <a id="Request:Request"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Request$.html"><span class="name">Request</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.RequestEntityTooLarge" data-isabs="false">
+      <a id="RequestEntityTooLarge:RequestEntityTooLarge"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="RequestEntityTooLarge$.html"><span class="name">RequestEntityTooLarge</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.RequestRangeNotSatisfiable" data-isabs="false">
+      <a id="RequestRangeNotSatisfiable:RequestRangeNotSatisfiable"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="RequestRangeNotSatisfiable$.html"><span class="name">RequestRangeNotSatisfiable</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.RequestTimeout" data-isabs="false">
+      <a id="RequestTimeout:RequestTimeout"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="RequestTimeout$.html"><span class="name">RequestTimeout</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.RequestUriTooLong" data-isabs="false">
+      <a id="RequestUriTooLong:RequestUriTooLong"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="RequestUriTooLong$.html"><span class="name">RequestUriTooLong</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ResetContent" data-isabs="false">
+      <a id="ResetContent:ResetContent"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ResetContent$.html"><span class="name">ResetContent</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ResponseData" data-isabs="false">
+      <a id="ResponseData:ResponseData"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ResponseData$.html"><span class="name">ResponseData</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.SeeOther" data-isabs="false">
+      <a id="SeeOther:SeeOther"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="SeeOther$.html"><span class="name">SeeOther</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Seg" data-isabs="false">
+      <a id="Seg:Seg"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Seg$.html"><span class="name">Seg</span></a>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.ServiceUnavailable" data-isabs="false">
+      <a id="ServiceUnavailable:ServiceUnavailable"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="ServiceUnavailable$.html"><span class="name">ServiceUnavailable</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.SwitchingProtocols" data-isabs="false">
+      <a id="SwitchingProtocols:SwitchingProtocols"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="SwitchingProtocols$.html"><span class="name">SwitchingProtocols</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.TRACE" data-isabs="false">
+      <a id="TRACE:TRACE"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="TRACE$.html"><span class="name">TRACE</span></a>
+        
+        <span class="result"> extends Method</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.TemporaryRedirect" data-isabs="false">
+      <a id="TemporaryRedirect:TemporaryRedirect"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="TemporaryRedirect$.html"><span class="name">TemporaryRedirect</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.Unauthorized" data-isabs="false">
+      <a id="Unauthorized:Unauthorized"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="Unauthorized$.html"><span class="name">Unauthorized</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.UnprocessableEntity" data-isabs="false">
+      <a id="UnprocessableEntity:UnprocessableEntity"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="UnprocessableEntity$.html"><span class="name">UnprocessableEntity</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.UnsupportedMediaType" data-isabs="false">
+      <a id="UnsupportedMediaType:UnsupportedMediaType"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="UnsupportedMediaType$.html"><span class="name">UnsupportedMediaType</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.UseProxy" data-isabs="false">
+      <a id="UseProxy:UseProxy"></a>
+      <h4 class="signature">
+      <span class="kind">object</span>
+      <span class="symbol"> 
+        <a href="UseProxy$.html"><span class="name">UseProxy</span></a>
+        
+        <span class="result"> extends ResponseStatus</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.examples" data-isabs="false">
+      <a id="examples:examples"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="examples/package.html"><span class="name">examples</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.mongrel2" data-isabs="false">
+      <a id="mongrel2:mongrel2"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="mongrel2/package.html"><span class="name">mongrel2</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.netty" data-isabs="false">
+      <a id="netty:netty"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="netty/package.html"><span class="name">netty</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="smoke.test" data-isabs="false">
+      <a id="test:test"></a>
+      <h4 class="signature">
+      <span class="kind">package</span>
+      <span class="symbol"> 
+        <a href="test/package.html"><span class="name">test</span></a>
+        
+        
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
