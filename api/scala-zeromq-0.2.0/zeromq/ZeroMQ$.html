@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>ZeroMQExtension - zeromq.ZeroMQExtension</title>
-          <meta name="description" content="ZeroMQExtension - zeromq.ZeroMQExtension" />
-          <meta name="keywords" content="ZeroMQExtension zeromq.ZeroMQExtension" />
+          <title>ZeroMQ - zeromq.ZeroMQ</title>
+          <meta name="description" content="ZeroMQ - zeromq.ZeroMQ" />
+          <meta name="keywords" content="ZeroMQ zeromq.ZeroMQ" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
-            var hash = 'zeromq.ZeroMQExtension';
+            var hash = 'zeromq.ZeroMQ$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -27,26 +27,26 @@
    	  </script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <a href="ZeroMQExtension$.html" title="Go to companion"><img src="../lib/class_to_object_big.png" /></a>
+        <img src="../lib/object_big.png" />
         <p id="owner"><a href="package.html" class="extype" name="zeromq">zeromq</a></p>
-        <h1><a href="ZeroMQExtension$.html" title="Go to companion">ZeroMQExtension</a></h1>
+        <h1>ZeroMQ</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ZeroMQExtension</span><span class="result"> extends <span class="extype" name="akka.actor.Extension">Extension</span></span>
+        <span class="name">ZeroMQ</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="akka.actor.Extension">Extension</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="zeromq.ZeroMQExtension"><span>ZeroMQExtension</span></li><li class="in" name="akka.actor.Extension"><span>Extension</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="zeromq.ZeroMQ"><span>ZeroMQ</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -82,23 +82,7 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="zeromq.ZeroMQExtension#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(system:akka.actor.ActorSystem):zeromq.ZeroMQExtension"></a>
-      <a id="&lt;init&gt;:ZeroMQExtension"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">ZeroMQExtension</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>)</span>
-      </span>
-      </h4>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -226,6 +210,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="zeromq.ZeroMQ#extension" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extension:zeromq.ZeroMQExtension"></a>
+      <a id="extension:ZeroMQExtension"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extension</span><span class="result">: <a href="ZeroMQExtension.html" class="extype" name="zeromq.ZeroMQExtension">ZeroMQExtension</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -294,19 +291,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#newSocket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newSocket(socketType:zeromq.SocketType,socketParams:zeromq.Param*):akka.actor.ActorRef"></a>
-      <a id="newSocket(SocketType,Param*):ActorRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newSocket</span><span class="params">(<span name="socketType">socketType: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>, <span name="socketParams">socketParams: <a href="Param.html" class="extype" name="zeromq.Param">Param</a>*</span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -333,29 +317,16 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#pollInterrupter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pollInterrupter:akka.actor.ActorRef"></a>
-      <a id="pollInterrupter:ActorRef"></a>
+    </li><li name="zeromq.ZeroMQ#socket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="socket(socketType:zeromq.SocketType):zeromq.SocketRef"></a>
+      <a id="socket(SocketType):SocketRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pollInterrupter</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="zeromq.ZeroMQExtension#socketManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="socketManager:akka.actor.ActorRef"></a>
-      <a id="socketManager:ActorRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">socketManager</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+        <span class="name">socket</span><span class="params">(<span name="socketType">socketType: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>)</span><span class="result">: <a href="SocketRef.html" class="extype" name="zeromq.SocketRef">SocketRef</a></span>
       </span>
       </h4>
       
@@ -372,19 +343,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#system" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="system:akka.actor.ActorSystem"></a>
-      <a id="system:ActorSystem"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">system</span><span class="result">: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
@@ -455,9 +413,7 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="akka.actor.Extension">
-              <h3>Inherited from <span class="extype" name="akka.actor.Extension">Extension</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

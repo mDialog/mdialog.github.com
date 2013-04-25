@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>zeromq.ConnectOption</title>
+          <title>zeromq.ZeroMQ</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link type="text/css" media="screen" rel="stylesheet" href="../lib/template.css" />
@@ -12,28 +12,25 @@
       <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="value">
       <div id="definition">
-        <img src="../lib/trait_big.png" />
+        <img src="../lib/object_big.png" />
         <p id="owner"><a name="zeromq" class="extype" href="package.html">zeromq</a></p>
-        <h1>ConnectOption</h1>
+        <h1>ZeroMQ</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">trait</span>
+      <span class="kind">object</span>
       <span class="symbol"> 
-        <span class="name">ConnectOption</span>
+        <span class="name">ZeroMQ</span>
         
-        <span class="result"> extends <a name="zeromq.SocketParam" class="extype" href="SocketParam.html">SocketParam</a></span>
+        <span class="result"> extends AnyRef</span>
       </span>
       </h4>
       
-          <div class="fullcommenttop" id="comment"><dl class="attributes block"> <dt>Attributes</dt><dd>sealed </dd></dl><div class="toggleContainer block">
+          <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="zeromq.SocketParam" class="extype" href="SocketParam.html">SocketParam</a>, <a name="zeromq.Param" class="extype" href="Param.html">Param</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
-        </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="zeromq.Bind" class="extype" href="Bind.html">Bind</a>, <a name="zeromq.Connect" class="extype" href="Connect.html">Connect</a></div>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
         </div></div>
         
 
@@ -49,7 +46,7 @@
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall out"><span>Hide All</span></li>
                 <li class="showall in"><span>Show all</span></li></ol>
-                <ol id="linearization"><li name="zeromq.ConnectOption" class="in"><span>ConnectOption</span></li><li name="zeromq.SocketParam" class="in"><span>SocketParam</span></li><li name="zeromq.Param" class="in"><span>Param</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+                <ol id="linearization"><li name="zeromq.ZeroMQ" class="in"><span>ZeroMQ</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -61,24 +58,10 @@
 
         
         
-        <div class="values members" id="values">
-              <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="zeromq.ConnectOption#endpoint" data-isabs="true">
-      <a id="endpoint:String"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol"> 
-        <span class="name">endpoint</span>
         
-        <span class="result">: String</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>abstract </dd></dl></div>
-    </li></ol>
-            </div>
 
         <div class="values members" id="values">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -181,6 +164,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="zeromq.ZeroMQ#extension" data-isabs="false">
+      <a id="extension:ZeroMQExtension"></a>
+      <h4 class="signature">
+      <span class="kind">implicit lazy val</span>
+      <span class="symbol"> 
+        <span class="name">extension</span>
+        
+        <span class="result">: <a name="zeromq.ZeroMQExtension" class="extype" href="ZeroMQExtension.html">ZeroMQExtension</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
       <a id="finalize():Unit"></a>
       <h4 class="signature">
@@ -261,6 +255,17 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="zeromq.ZeroMQ#socket" data-isabs="false">
+      <a id="socket(SocketType):SocketRef"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol"> 
+        <span class="name">socket</span>
+        
+        <span class="params">(<span name="socketType">socketType: <a name="zeromq.SocketType" class="extype" href="SocketType.html">SocketType</a></span>)</span><span class="result">: <a name="zeromq.SocketRef" class="extype" href="SocketRef.html">SocketRef</a></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
       <a id="synchronized[T0](⇒ T0):T0"></a>
       <h4 class="signature">
@@ -330,11 +335,7 @@
 
         
 
-        <div name="zeromq.SocketParam" class="parent">
-              <h3>Inherited from <a name="zeromq.SocketParam" class="extype" href="SocketParam.html">SocketParam</a></h3>
-            </div><div name="zeromq.Param" class="parent">
-              <h3>Inherited from <a name="zeromq.Param" class="extype" href="Param.html">Param</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
+        <div name="scala.AnyRef" class="parent">
               <h3>Inherited from AnyRef</h3>
             </div><div name="scala.Any" class="parent">
               <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>

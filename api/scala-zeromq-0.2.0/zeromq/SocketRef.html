@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>ZeroMQExtension - zeromq.ZeroMQExtension</title>
-          <meta name="description" content="ZeroMQExtension - zeromq.ZeroMQExtension" />
-          <meta name="keywords" content="ZeroMQExtension zeromq.ZeroMQExtension" />
+          <title>SocketRef - zeromq.SocketRef</title>
+          <meta name="description" content="SocketRef - zeromq.SocketRef" />
+          <meta name="keywords" content="SocketRef zeromq.SocketRef" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
-            var hash = 'zeromq.ZeroMQExtension';
+            var hash = 'zeromq.SocketRef';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,24 +29,24 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="ZeroMQExtension$.html" title="Go to companion"><img src="../lib/class_to_object_big.png" /></a>
+        <img src="../lib/class_big.png" />
         <p id="owner"><a href="package.html" class="extype" name="zeromq">zeromq</a></p>
-        <h1><a href="ZeroMQExtension$.html" title="Go to companion">ZeroMQExtension</a></h1>
+        <h1>SocketRef</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">ZeroMQExtension</span><span class="result"> extends <span class="extype" name="akka.actor.Extension">Extension</span></span>
+        <span class="name">SocketRef</span><span class="params">(<span name="socketType">socketType: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="extension">extension: <a href="ZeroMQExtension.html" class="extype" name="zeromq.ZeroMQExtension">ZeroMQExtension</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="akka.actor.Extension">Extension</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="zeromq.ZeroMQExtension"><span>ZeroMQExtension</span></li><li class="in" name="akka.actor.Extension"><span>Extension</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="zeromq.SocketRef"><span>SocketRef</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -84,16 +84,16 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="zeromq.ZeroMQExtension#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(system:akka.actor.ActorSystem):zeromq.ZeroMQExtension"></a>
-      <a id="&lt;init&gt;:ZeroMQExtension"></a>
+              <ol><li name="zeromq.SocketRef#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(socketType:zeromq.SocketType)(implicitextension:zeromq.ZeroMQExtension):zeromq.SocketRef"></a>
+      <a id="&lt;init&gt;:SocketRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">ZeroMQExtension</span><span class="params">(<span name="system">system: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>)</span>
+        <span class="name">SocketRef</span><span class="params">(<span name="socketType">socketType: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="extension">extension: <a href="ZeroMQExtension.html" class="extype" name="zeromq.ZeroMQExtension">ZeroMQExtension</a></span>)</span>
       </span>
       </h4>
       
@@ -184,6 +184,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="zeromq.SocketRef#bind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bind(address:String):Unit"></a>
+      <a id="bind(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bind</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -200,6 +213,32 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="zeromq.SocketRef#close" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="close:Unit"></a>
+      <a id="close:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">close</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#connect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="connect(address:String):Unit"></a>
+      <a id="connect(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">connect</span><span class="params">(<span name="address">address: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -213,19 +252,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -255,19 +281,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="zeromq.SocketRef#getOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getOption(query:zeromq.SocketOptionQuery):Any"></a>
+      <a id="getOption(SocketOptionQuery):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">getOption</span><span class="params">(<span name="query">query: <a href="SocketOptionQuery.html" class="extype" name="zeromq.SocketOptionQuery">SocketOptionQuery</a></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -294,19 +320,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#newSocket" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newSocket(socketType:zeromq.SocketType,socketParams:zeromq.Param*):akka.actor.ActorRef"></a>
-      <a id="newSocket(SocketType,Param*):ActorRef"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newSocket</span><span class="params">(<span name="socketType">socketType: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>, <span name="socketParams">socketParams: <a href="Param.html" class="extype" name="zeromq.Param">Param</a>*</span>)</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -333,29 +346,94 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#pollInterrupter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pollInterrupter:akka.actor.ActorRef"></a>
-      <a id="pollInterrupter:ActorRef"></a>
+    </li><li name="zeromq.SocketRef#recv" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="recv:zeromq.Message"></a>
+      <a id="recv:Message"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pollInterrupter</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+        <span class="name">recv</span><span class="result">: <a href="Message.html" class="extype" name="zeromq.Message">Message</a></span>
       </span>
       </h4>
       
-    </li><li name="zeromq.ZeroMQExtension#socketManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="socketManager:akka.actor.ActorRef"></a>
-      <a id="socketManager:ActorRef"></a>
+    </li><li name="zeromq.SocketRef#recvOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="recvOption:Option[zeromq.Message]"></a>
+      <a id="recvOption:Option[Message]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recvOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="Message.html" class="extype" name="zeromq.Message">Message</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#send" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="send(message:zeromq.Message):Unit"></a>
+      <a id="send(Message):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">send</span><span class="params">(<span name="message">message: <a href="Message.html" class="extype" name="zeromq.Message">Message</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#setOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setOption(option:zeromq.SocketOption):Unit"></a>
+      <a id="setOption(SocketOption):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setOption</span><span class="params">(<span name="option">option: <a href="SocketOption.html" class="extype" name="zeromq.SocketOption">SocketOption</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#socketType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="socketType:zeromq.SocketType"></a>
+      <a id="socketType:SocketType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">socketManager</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+        <span class="name">socketType</span><span class="result">: <a href="SocketType.html" class="extype" name="zeromq.SocketType">SocketType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#subscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subscribe(topic:String):Unit"></a>
+      <a id="subscribe(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="topic">topic: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="zeromq.SocketRef#subscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subscribe(topic:akka.util.ByteString):Unit"></a>
+      <a id="subscribe(ByteString):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subscribe</span><span class="params">(<span name="topic">topic: <span class="extype" name="akka.util.ByteString">ByteString</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -372,32 +450,32 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="zeromq.ZeroMQExtension#system" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="system:akka.actor.ActorSystem"></a>
-      <a id="system:ActorSystem"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">system</span><span class="result">: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>
-      </span>
-      </h4>
-      
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
+    </li><li name="zeromq.SocketRef#unsubscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="unsubscribe(topic:String):Unit"></a>
+      <a id="unsubscribe(String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">unsubscribe</span><span class="params">(<span name="topic">topic: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      
+    </li><li name="zeromq.SocketRef#unsubscribe" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="unsubscribe(topic:akka.util.ByteString):Unit"></a>
+      <a id="unsubscribe(ByteString):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unsubscribe</span><span class="params">(<span name="topic">topic: <span class="extype" name="akka.util.ByteString">ByteString</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -455,8 +533,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="akka.actor.Extension">
-              <h3>Inherited from <span class="extype" name="akka.actor.Extension">Extension</span></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
