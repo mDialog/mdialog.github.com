@@ -237,16 +237,27 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li visbl="pub" name="zeromq.ZeroMQExtension#newSocket" data-isabs="false">
-      <a id="newSocket(SocketType,Param*):ActorRef"></a>
+      <a id="newSocket(SocketType,Param*)(ActorContext):ActorRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">newSocket</span>
         
-        <span class="params">(<span name="socketType">socketType: <a name="zeromq.SocketType" class="extype" href="SocketType.html">SocketType</a></span>, <span name="socketParams">socketParams: <a name="zeromq.Param" class="extype" href="Param.html">Param</a>*</span>)</span><span class="result">: <span name="akka.actor.ActorRef" class="extype">ActorRef</span></span>
+        <span class="params">(<span name="socketType">socketType: <a name="zeromq.SocketType" class="extype" href="SocketType.html">SocketType</a></span>, <span name="socketParams">socketParams: <a name="zeromq.Param" class="extype" href="Param.html">Param</a>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="context">context: <span name="akka.actor.ActorContext" class="extype">ActorContext</span> = <span class="symbol">null</span></span>)</span><span class="result">: <span name="akka.actor.ActorRef" class="extype">ActorRef</span></span>
       </span>
       </h4>
       
+    </li><li visbl="pub" name="zeromq.ZeroMQExtension#newSocketTimeout" data-isabs="false">
+      <a id="newSocketTimeout:Timeout"></a>
+      <h4 class="signature">
+      <span class="kind">implicit val</span>
+      <span class="symbol"> 
+        <span class="name">newSocketTimeout</span>
+        
+        <span class="result">: <span name="akka.util.Timeout" class="extype">Timeout</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>implicit </dd></dl></div>
     </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
       <a id="notify():Unit"></a>
       <h4 class="signature">

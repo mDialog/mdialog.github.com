@@ -247,12 +247,12 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>final </dd><dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="zeromq.SocketRef#getOption" data-isabs="false">
-      <a id="getOption(SocketOptionQuery):Any"></a>
+    </li><li visbl="pub" name="zeromq.SocketRef#getSocketOption" data-isabs="false">
+      <a id="getSocketOption(SocketOptionQuery):Any"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">getOption</span>
+        <span class="name">getSocketOption</span>
         
         <span class="params">(<span name="query">query: <a name="zeromq.SocketOptionQuery" class="extype" href="SocketOptionQuery.html">SocketOptionQuery</a></span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
       </span>
@@ -358,13 +358,13 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="zeromq.SocketRef" class="extype" href="">SocketRef</a> → Product</dd></dl></div>
     </li><li visbl="pub" name="zeromq.SocketRef#recv" data-isabs="false">
-      <a id="recv:Message"></a>
+      <a id="recv(Duration):Future[Message]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
         <span class="name">recv</span>
         
-        <span class="result">: <a name="zeromq.Message" class="extype" href="Message.html">Message</a></span>
+        <span class="params">(<span name="timeoutDuration">timeoutDuration: <span name="akka.util.Duration" class="extype">Duration</span> = <span class="symbol"><span class="name"><a href="../akka/package.html">1000.millis</a></span></span></span>)</span><span class="result">: <span name="akka.dispatch.Future" class="extype">Future</span>[<a name="zeromq.Message" class="extype" href="Message.html">Message</a>]</span>
       </span>
       </h4>
       
@@ -390,12 +390,12 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="zeromq.SocketRef#setOption" data-isabs="false">
-      <a id="setOption(SocketOption):Unit"></a>
+    </li><li visbl="pub" name="zeromq.SocketRef#setSocketOption" data-isabs="false">
+      <a id="setSocketOption(SocketOption):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol"> 
-        <span class="name">setOption</span>
+        <span class="name">setSocketOption</span>
         
         <span class="params">(<span name="option">option: <a name="zeromq.SocketOption" class="extype" href="SocketOption.html">SocketOption</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
       </span>
